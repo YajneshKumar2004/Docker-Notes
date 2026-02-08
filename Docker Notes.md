@@ -166,6 +166,40 @@ $ docker rmi -f $(docker images -q)
 
 
 
+-p → Port mapping
+
+&nbsp;	-p <host\_port>:<container\_port>
+
+&nbsp;	Example: 
+
+&nbsp;		$ docker run -p 8080:80 nginx
+
+&nbsp;		Open port 8080 on your computer
+
+&nbsp;		Forward traffic to port 80 inside the container (where Nginx runs)
+
+&nbsp;		So you can access it in browser: http://localhost:8080
+
+
+
+
+
+-e → Environment variable
+
+&nbsp;	-e VARIABLE\_NAME=value
+
+&nbsp;	Example: 
+
+&nbsp;		$ docker run -e MYSQL\_ROOT\_PASSWORD=1234 mysql
+
+&nbsp;		Inside the container, an environment variable is created: MYSQL\_ROOT\_PASSWORD=1234
+
+
+
+
+
+&nbsp;		
+
 
 
 
